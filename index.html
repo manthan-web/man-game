@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200;300;400;500&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Simple Game Projects</title>
+</head>
+
+<body>
+   
+    <div class="main-container">
+        <p class="title">The Man Game</p>
+        <p class="man-position"></p>
+        <div class="img-person"><img class="img-man js-man" src="Frame_139-removebg-preview.png" alt=""></div>
+        <div class="buttons">
+
+
+            <button class="btn" onclick="
+                manMovingLeft()
+                document.querySelector('.man-position').innerText = `Position: Left`
+                ">Left</button>
+
+
+            <button class="btn" onclick="
+            manMovingCenter()
+            document.querySelector('.man-position').innerText = `Position: Center`
+            ">Center</button>
+
+
+            <button class="btn" onclick="manMovingRight()
+            document.querySelector('.man-position').innerText = `Position: Right`
+            ">Right</button>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
